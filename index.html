@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./app.css">
+      <title>Shopping List</title>
+      <link rel="icon"
+         href="https://raw.githubusercontent.com/ebenezerdon/shopping-app-images/main/assets/icon-192.png">
+   </head>
+
+   <body>
+      <nav>
+         <p>My List</p>
+         <ul class="navigation">
+            <li>Shop</li>
+            <li> Cart</li>
+            <li>Checkout</li>
+         </ul>
+      </nav>
+
+      <div class="container">
+         <form id="itemForm">
+            <label>
+               Name of Item
+               <input type="text" name="" id="nameInput" required>
+            </label>
+
+            <label>
+               Quantity:
+               <input type="number" name="" id="quantityInput" value=0>
+            </label>
+
+            <label>
+               Price:
+               <input type="text" name="" id="priceInput" value=1>
+            </label>
+         </form>
+
+         <button type="submit" id="addItemButton">
+            Add Item
+         </button>
+      </div>
+
+      <div id="itemsDiv">
+         <div class="item ">
+            <label for="">
+               <input type="checkbox" class="checkbox" name="" id="" checked>
+            </label>
+
+            <div class="itemInfo">
+               <p>Fruit Juice</p>
+               <p>$5 x 3</p>
+            </div>
+
+            <button class="deleteButton">X</button>
+         </div>
+         <div id="totalPriceDiv"></div>
+      </div>
+
+      <div id="itemsDiv">
+         <div class="item purchased ">
+            <label for="">
+               <input type="checkbox" class="checkbox" name="" id="" checked>
+            </label>
+
+            <div class="itemInfo">
+               <p>Fruit Juice</p>
+               <p>$5 x 3</p>
+
+            </div>
+            <button class="deleteButton">X</button>
+         </div>
+         <div id="totalPriceDiv"> Total price $15</div>
+      </div>
+
+      <footer class="Footer">
+         <label for="suggest">Suggestion Box</label>
+         <textarea name="" id="suggest" cols="20" rows="10">
+            Type here
+         </textarea>
+
+      </footer>
+   </body>
+
+
+</html>
